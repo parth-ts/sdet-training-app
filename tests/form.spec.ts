@@ -193,7 +193,6 @@ test("create profile form", async ({ page }) => {
 
   /* test dropdown button */
 
-  /*
   const countrySection = formLocator
     .locator("div")
     .filter({ hasText: "Country" });
@@ -225,8 +224,6 @@ test("create profile form", async ({ page }) => {
   await expect(selectOptions).toHaveValue(option);
   await expect(selectText).toHaveText("India");
 
-  */
-
   /* test bio text area*/
 
   const bioSection = formLocator
@@ -243,5 +240,5 @@ test("create profile form", async ({ page }) => {
   );
   await expect(bioDescription).toBeVisible();
 
-  textArea.pressSequentially("Hii, there");
+  await textArea.pressSequentially("Hii, there");
 });
