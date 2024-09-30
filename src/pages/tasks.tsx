@@ -42,6 +42,11 @@ export default function TaskPage() {
             </p>
           </div>
         </div>
+        {/* date picker */}
+        <div> 
+          <label htmlFor="task">Date: </label>
+          <input type="date" id="task" name="task"/>
+        </div>
         <DataTable data={tasks} columns={columns} />
       </div>
     </>
